@@ -31,14 +31,12 @@
     - CSV形式
 - [Japanese-LM-Med-Harness](https://github.com/stardust-coder/japanese-lm-med-harness)
     - IgakuQA, MedQA, MedMCQA, MMLU/JMMLU(医療関係)の評価用プログラム. 日英対訳.
+- [JMedBench](https://huggingface.co/datasets/Coldog2333/JMedBench)
+    - あらゆる医療の質問応答データセットをjsonlで格納.
 
 
 ### その他
 - [万病辞書](https://sociocom.naist.jp/resources-software/)
     - NAIST荒牧先生のチームが作成. その他のデータやコードも充実.
     - CSV形式. 380330件の病名やICDコードなど.
-
-
-
-## Available in English
-- [MedEval](https://github.com/ZexueHe/MedEval)
+- 英語の医療データセット一覧については[こちら](https://github.com/stardust-coder/awesome-latest-LLM)の最下部を参照。
