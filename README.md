@@ -1,6 +1,6 @@
 # 日本語の医療分野関連データセット（医療LLM開発用）
 
-Curation of Japanese Medical Data Sources for LLM development
+Curation of Japanese Medical Data Sources for LLM development.
 
 
 ### 学習用コーパス
@@ -9,7 +9,8 @@ Curation of Japanese Medical Data Sources for LLM development
     - 医学論文およそ1100万件.
 - [J-ResearchCorpus](https://huggingface.co/datasets/kunishou/J-ResearchCorpus)
 - [Apollo Corpus JP](https://huggingface.co/datasets/kunishou/ApolloCorpus-ja)
-
+- [JASMINE](https://github.com/OnizukaLab/JASMINE)
+    - テキスト平易化パラレルコーパス
 
 
 ### 評価用タスク：原則としてLLMの学習データに含めるべきではない！
@@ -39,10 +40,14 @@ Curation of Japanese Medical Data Sources for LLM development
     - あらゆる医療の質問応答データセットをjsonlで格納. GPTによる機械翻訳により日英が用意.
     - IgakuQA, MedQA, EJMMT など.
 
+### ツール
+- [JaMIE: a Japanese Medical Information Extraction toolkit](https://github.com/racerandom/JaMIE)
 
 ### その他
 - [万病辞書](https://sociocom.naist.jp/resources-software/)
     - NAIST荒牧先生のチームが作成. その他のデータやコードも充実.
     - CSV形式. 380330件の病名やICDコードなど.
 - [医療ドメイン特化LLMの性能はどうやって評価する？](https://zenn.dev/hellorusk/articles/04a29974138c7b)
+- [Mecon Audio](https://github.com/elith-co-jp/meconaudio)
+    - 原則非商用
 - 英語の医療データセット一覧については[こちら](https://github.com/stardust-coder/awesome-latest-LLM)の最下部を参照。
