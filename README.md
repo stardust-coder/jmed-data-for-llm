@@ -1,11 +1,15 @@
-# Curation of Japanese Medical Data Sources for LLM development
+# 日本語の医療分野関連データセット（医療LLM開発用）
 
-## Available in Japanese
+Curation of Japanese Medical Data Sources for LLM development
+
 
 ### 学習用コーパス
-- [PubMedコーパス]()
-    - NII相澤先生のチーム JMedRoBERTaで学習用に利用.
-    - 医学論文1100万件.
+- [JST（抄録&本文）]()
+    - NII相澤先生のチーム [JMedRoBERTa](https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/P3-1.pdf)で学習用に利用.
+    - 医学論文およそ1100万件.
+- [J-ResearchCorpus](https://huggingface.co/datasets/kunishou/J-ResearchCorpus)
+- [Apollo Corpus JP](https://huggingface.co/datasets/kunishou/ApolloCorpus-ja)
+
 
 
 ### 評価用タスク：原則としてLLMの学習データに含めるべきではない！
@@ -32,11 +36,13 @@
 - [Japanese-LM-Med-Harness](https://github.com/stardust-coder/japanese-lm-med-harness)
     - IgakuQA, MedQA, MedMCQA, MMLU/JMMLU(医療関係)の評価用プログラム. 日英対訳.
 - [JMedBench](https://huggingface.co/datasets/Coldog2333/JMedBench)
-    - あらゆる医療の質問応答データセットをjsonlで格納.
+    - あらゆる医療の質問応答データセットをjsonlで格納. GPTによる機械翻訳により日英が用意.
+    - IgakuQA, MedQA, EJMMT など.
 
 
 ### その他
 - [万病辞書](https://sociocom.naist.jp/resources-software/)
     - NAIST荒牧先生のチームが作成. その他のデータやコードも充実.
     - CSV形式. 380330件の病名やICDコードなど.
+- [医療ドメイン特化LLMの性能はどうやって評価する？](https://zenn.dev/hellorusk/articles/04a29974138c7b)
 - 英語の医療データセット一覧については[こちら](https://github.com/stardust-coder/awesome-latest-LLM)の最下部を参照。
