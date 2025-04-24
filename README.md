@@ -1,10 +1,10 @@
 # 日本語の医療分野関連データセット（医療LLM開発用）
 
-Curation of Japanese Medical Data Sources for LLM development.
-
+Curation of Japanese Medical Data Sources for LLM development.  
+Let's go "Soverign AI" !
 
 ### 学習用コーパス
-- [JST（抄録&本文）]()
+- JST（抄録&本文
     - NII相澤先生のチーム [JMedRoBERTa](https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/P3-1.pdf)で学習用に利用.
     - 医学論文およそ1100万件.
 - [J-ResearchCorpus](https://huggingface.co/datasets/kunishou/J-ResearchCorpus)
@@ -29,25 +29,37 @@ Curation of Japanese Medical Data Sources for LLM development.
         - 進化的マージ時のタスクとして利用想定.
         - 商用利用不可ライセンス
         - longisland3氏作成. データは[医療美術部の医師国家試験過去問チャート](https://medical-illustration.club/kakomon-chart/med)から引用.
+- 薬剤師国家試験
+    - [YakugakuQA (EQUES)]()
+- [PharmaBench-JP (EQUES)]()
+    - 名寄せ
+    - 齟齬チェック
 - [JMED-LLM](https://github.com/sociocom/JMED-LLM)
     - 荒牧先生のチームが作成. NERなど8タスク. 
 - [JMMLU](https://github.com/nlp-waseda/JMMLU)
     - NAIST早稲田大河原研が作成. MMLUの和訳. 
-    - CSV形式
-- [Japanese-LM-Med-Harness](https://github.com/stardust-coder/japanese-lm-med-harness)
-    - IgakuQA, MedQA, MedMCQA, MMLU/JMMLU(医療関係)の評価用プログラム. 日英対訳.
+    - CSV形式のデータセット.
+- [MMLU-ProX]()
+    - 多言語. 日本語も含まれる. 
 - [JMedBench](https://huggingface.co/datasets/Coldog2333/JMedBench)
     - あらゆる医療の質問応答データセットをjsonlで格納. GPTによる機械翻訳により日英が用意.
     - IgakuQA, MedQA, EJMMT など.
 
+
 ### ツール
 - [JaMIE: a Japanese Medical Information Extraction toolkit](https://github.com/racerandom/JaMIE)
+- [Japanese-LM-Med-Harness](https://github.com/stardust-coder/japanese-lm-med-harness)
+    - IgakuQA, MedQA, MedMCQA, MMLU/JMMLU(医療関係)の評価用プログラム. 日英対訳.
 
 ### その他
 - [万病辞書](https://sociocom.naist.jp/resources-software/)
     - NAIST荒牧先生のチームが作成. その他のデータやコードも充実.
     - CSV形式. 380330件の病名やICDコードなど.
-- [医療ドメイン特化LLMの性能はどうやって評価する？](https://zenn.dev/hellorusk/articles/04a29974138c7b)
 - [Mecon Audio](https://github.com/elith-co-jp/meconaudio)
     - 原則非商用
+- [PRO annotations on Weblogs](https://yukiar.github.io/pro_jp/)
 - 英語の医療データセット一覧については[こちら](https://github.com/stardust-coder/awesome-latest-LLM)の最下部を参照。
+    - モデルについても記載あり.
+
+### 参考記事
+- [医療ドメイン特化LLMの性能はどうやって評価する？](https://zenn.dev/hellorusk/articles/04a29974138c7b)
