@@ -11,7 +11,8 @@ Let's go "Soverign AI" !
 - [Apollo Corpus JP](https://huggingface.co/datasets/kunishou/ApolloCorpus-ja)
 - [JASMINE](https://github.com/OnizukaLab/JASMINE)
     - テキスト平易化パラレルコーパス
-
+- [JP-AlpaCare-MedInstruct-52k](https://huggingface.co/datasets/li-lab/JP-AlpaCare-MedInstruct-52k)
+    - [AlpaCare](https://huggingface.co/datasets/lavita/AlpaCare-MedInstruct-52k)をGPT-4oで機械翻訳した日本語データセット
 
 ### 評価用タスク：原則としてLLMの学習データに含めるべきではない！
 - 日本医師国家試験(NMLE)
@@ -24,11 +25,15 @@ Let's go "Soverign AI" !
     - [IgakuQA](https://github.com/jungokasai/IgakuQA)
         - 第112-116回, 2018-2022. 日英対訳.
         - [Kasai et al.](https://arxiv.org/abs/2303.18027)が作成.
+    - [IgakuQA119](https://github.com/docto-rin/IgakuQA119)
+        - 第119回医師国家試験のリーダーボード.
     - [NMLE](https://huggingface.co/datasets/longisland3/NMLE)
         - 第110-117回
         - 進化的マージ時のタスクとして利用想定.
         - 商用利用不可ライセンス
         - longisland3氏作成. データは[医療美術部の医師国家試験過去問チャート](https://medical-illustration.club/kakomon-chart/med)から引用.
+    - [NMLE-RTA](https://github.com/iKora128/nmle-rta/tree/main)
+
 - 薬剤師国家試験
     - [YakugakuQA (EQUES)]()
 - [PharmaBench-JP (EQUES)]()
@@ -44,7 +49,7 @@ Let's go "Soverign AI" !
 - [JMedBench](https://huggingface.co/datasets/Coldog2333/JMedBench)
     - あらゆる医療の質問応答データセットをjsonlで格納. GPTによる機械翻訳により日英が用意.
     - IgakuQA, MedQA, EJMMT など.
-
+- [DenQA](https://github.com/aistairc/medLLM_QA_benchmark)
 
 ### ツール
 - [JaMIE: a Japanese Medical Information Extraction toolkit](https://github.com/racerandom/JaMIE)
@@ -61,5 +66,11 @@ Let's go "Soverign AI" !
 - 英語の医療データセット一覧については[こちら](https://github.com/stardust-coder/awesome-latest-LLM)の最下部を参照。
     - モデルについても記載あり.
 
-### 参考記事
+### 参考文献
 - [医療ドメイン特化LLMの性能はどうやって評価する？](https://zenn.dev/hellorusk/articles/04a29974138c7b)
+- [JMedLoRA](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P9-4.pdf)
+- [医療・ヘルスケア領域における大規模言語モデルの構築に向けて](https://tech.preferred.jp/ja/blog/llama3-preferred-medswallow-70b/)
+
+
+### キーワード
+医療LLM, 医療×LLM, 医療AI, 医療×AI, 医療自然言語処理, 日本語医療LLM
