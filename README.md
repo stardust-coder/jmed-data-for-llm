@@ -12,12 +12,7 @@ Let's go "Soverign AI" !
 | EQUES | [JPharmatron](https://github.com/stardust-coder/awesome-latest-LLM/blob/master) | 7B | 継続学習 |
 | 東大病院 | JMedLoRA | 70B | LoRA |
 | PFN | [Preferred-MedLLM-Qwen-72B](https://huggingface.co/pfnet/Preferred-MedLLM-Qwen-72B) | 72B | 継続学習 |
-| LLM-JP | [SIP-jmed-llm-2-8x13b-OP-instruct](https://huggingface.co/SIP-med-LLM/SIP-jmed-llm-2-8x13b-OP-instruct) | 8x13B, MoE | 継続学習, SFT| 
-
-
-
-
-
+| NII | [SIP-jmed-llm-2-8x13b-OP-instruct](https://huggingface.co/SIP-med-LLM/SIP-jmed-llm-2-8x13b-OP-instruct) | 8x13B, MoE | 継続学習, SFT| 
 
 
 ### 学習用コーパス
