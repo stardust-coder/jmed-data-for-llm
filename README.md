@@ -7,12 +7,15 @@ Let's go "Soverign AI" !
 ### 国内モデル開発の取り組み
 
 
-| 事業者 | モデル | モデルサイズ | 手法 | 
-|---|---|---|---|
-| EQUES | [JPharmatron](https://github.com/stardust-coder/awesome-latest-LLM/blob/master) | 7B | 継続学習 |
-| 東大病院 | JMedLoRA | 70B | LoRA |
-| PFN | [Preferred-MedLLM-Qwen-72B](https://huggingface.co/pfnet/Preferred-MedLLM-Qwen-72B) | 72B | 継続学習 |
-| NII | [SIP-jmed-llm-2-8x13b-OP-instruct](https://huggingface.co/SIP-med-LLM/SIP-jmed-llm-2-8x13b-OP-instruct) | 8x13B, MoE | 継続学習, SFT| 
+| 事業者 | モデル | モデルサイズ | 手法 | IgakuQA | source |
+|---|---|---|---|---|---|
+| EQUES | [JPharmatron](https://github.com/stardust-coder/awesome-latest-LLM/blob/master) | 7B | 継続学習 | 64.7% ||
+| 東大病院 | [JMedLoRA](https://arxiv.org/pdf/2310.10083) | 70B | LoRA | 33.1% ||
+| PFN | [Preferred-MedLLM-Qwen-72B](https://huggingface.co/pfnet/Preferred-MedLLM-Qwen-72B) | 72B | 継続学習 | 86.1 ~ 86.2% | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) [{3}](https://tech.preferred.jp/ja/blog/preferred-medllm-qwen-72b/) |
+| ELYZA | [ELYZA-Med-Base-1.0-Qwen2.5-72B](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) | 72B | 継続学習 | 86.7% ||
+| NII | [SIP-jmed-llm-2-8x13b-OP-instruct](https://huggingface.co/SIP-med-LLM/SIP-jmed-llm-2-8x13b-OP-instruct) | 8x13B, MoE | 継続学習, SFT| 約80% | |
+| （参考）| GPT-4o | 不明 | - | 86.6 ~ 88.9% | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) [{2}](https://arxiv.org/pdf/2506.11114) [{3}](https://tech.preferred.jp/ja/blog/preferred-medllm-qwen-72b/) |
+| （参考）| o1-preview | 不明 | - |  88.4%  | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) |
 
 
 ### 学習用コーパス
@@ -40,12 +43,15 @@ Let's go "Soverign AI" !
         - [Kasai et al.](https://arxiv.org/abs/2303.18027)が作成.
     - [IgakuQA119](https://github.com/docto-rin/IgakuQA119)
         - 第119回医師国家試験のリーダーボード.
+        - Gemini-2.5-Proがトップ.
     - [NMLE](https://huggingface.co/datasets/longisland3/NMLE)
         - 第110-117回
         - 進化的マージ時のタスクとして利用想定.
         - 商用利用不可ライセンス
         - longisland3氏作成. データは[医療美術部の医師国家試験過去問チャート](https://medical-illustration.club/kakomon-chart/med)から引用.
     - [NMLE-RTA](https://github.com/iKora128/nmle-rta/tree/main)
+    - [Kokushi-MD10](https://huggingface.co/datasets/humanalysis-square/KokushiMD-10)
+        - 10種類の医療関係の国家試験
 
 - 薬剤師国家試験
     - [YakugakuQA (EQUES)]()
