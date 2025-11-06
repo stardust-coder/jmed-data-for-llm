@@ -9,7 +9,7 @@ Let's go "Soverign AI" !
 
 | 事業者 | モデル | モデルサイズ | 手法 | IgakuQA | source |
 |---|---|---|---|---|---|
-| EQUES | [JPharmatron](https://github.com/stardust-coder/awesome-latest-LLM/blob/master) | 7B | 継続学習 | 64.7% ||
+| EQUES | [JPharmatron](https://github.com/stardust-coder/awesome-latest-LLM/blob/master) | 7B | 継続学習 | 64.7% | [{4}](https://prtimes.jp/main/html/rd/p/000000013.000101360.html)|
 | 東大病院 | [JMedLoRA](https://arxiv.org/pdf/2310.10083) | 70B | LoRA | 33.1% ||
 | PFN | [Preferred-MedLLM-Qwen-72B](https://huggingface.co/pfnet/Preferred-MedLLM-Qwen-72B) | 72B | 継続学習 | 86.1 ~ 86.2% | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) [{3}](https://tech.preferred.jp/ja/blog/preferred-medllm-qwen-72b/) |
 | ELYZA | [ELYZA-Med-Base-1.0-Qwen2.5-72B](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) | 72B | 継続学習 | 86.7% ||
@@ -50,12 +50,12 @@ Let's go "Soverign AI" !
         - 商用利用不可ライセンス
         - longisland3氏作成. データは[医療美術部の医師国家試験過去問チャート](https://medical-illustration.club/kakomon-chart/med)から引用.
     - [NMLE-RTA](https://github.com/iKora128/nmle-rta/tree/main)
-    - [Kokushi-MD10](https://huggingface.co/datasets/humanalysis-square/KokushiMD-10)
+    - [KokushiMD-10](https://huggingface.co/datasets/humanalysis-square/KokushiMD-10)
         - 10種類の医療関係の国家試験
 
 - 薬剤師国家試験
-    - [YakugakuQA (EQUES)]()
-- [JPharmaBench　(EQUES)]()
+    - [YakugakuQA (EQUES)](https://huggingface.co/datasets/EQUES/YakugakuQA)
+- [JPharmaBench　(EQUES)](https://huggingface.co/collections/EQUES/jpharmabench)
     - 名寄せベンチマーク NayoseQA
     - 齟齬チェックベンチマーク　SogoCheck
 - [JMED-LLM](https://github.com/sociocom/JMED-LLM)
