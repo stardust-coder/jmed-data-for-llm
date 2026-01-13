@@ -71,6 +71,9 @@ Let's go "Soverign AI" !
 - [DenQA](https://github.com/aistairc/medLLM_QA_benchmark)
     - 歯科医師国家試験
     - 2023~2024
+- [GlobMed](https://huggingface.co/collections/ruiyang-medinfo/globmed)
+    - 多言語. 一部に日本語も含まれる. 
+
 
 ### ツール類
 - [JaMIE: a Japanese Medical Information Extraction toolkit](https://github.com/racerandom/JaMIE)
