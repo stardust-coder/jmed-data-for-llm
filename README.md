@@ -14,6 +14,8 @@ Let's go "Soverign AI" !
 | PFN | [Preferred-MedLLM-Qwen-72B](https://huggingface.co/pfnet/Preferred-MedLLM-Qwen-72B) | 72B | 継続学習 | 86.1 ~ 86.2% | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) [{3}](https://tech.preferred.jp/ja/blog/preferred-medllm-qwen-72b/) |
 | ELYZA | [ELYZA-Med-Base-1.0-Qwen2.5-72B](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) | 72B | 継続学習 | 86.7% ||
 | NII | [SIP-jmed-llm-2-8x13b-OP-instruct](https://huggingface.co/SIP-med-LLM/SIP-jmed-llm-2-8x13b-OP-instruct) | 8x13B, MoE | 継続学習, SFT| 約80% | |
+| SIP/松尾研 | Weblab-MedLLM-Qwen-2.5-109B-Instruct | 109B | Qwen-2.5-72B-Instructのupcycling | 93.3% | [{4}](https://weblab.t.u-tokyo.ac.jp/news/2026-03-05-02/)|
+| SIP/東大/理研 | [VLM](https://www.rcast.u-tokyo.ac.jp/ja/news/release/20260306.html) | 142B | - | - | [{5}](https://www.rcast.u-tokyo.ac.jp/ja/news/release/20260306.html) |
 | （参考）| GPT-4o | 不明 | - | 86.6 ~ 88.9% | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) [{2}](https://arxiv.org/pdf/2506.11114) [{3}](https://tech.preferred.jp/ja/blog/preferred-medllm-qwen-72b/) |
 | （参考）| o1-preview | 不明 | - |  88.4%  | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) |
 
@@ -50,11 +52,10 @@ Let's go "Soverign AI" !
         - 商用利用不可ライセンス
         - longisland3氏作成. データは[医療美術部の医師国家試験過去問チャート](https://medical-illustration.club/kakomon-chart/med)から引用.
     - [NMLE-RTA](https://github.com/iKora128/nmle-rta/tree/main)
-    - [KokushiMD-10](https://huggingface.co/datasets/humanalysis-square/KokushiMD-10)
-        - 10種類の医療関係の国家試験
-
 - 薬剤師国家試験
     - [YakugakuQA (EQUES)](https://huggingface.co/datasets/EQUES/YakugakuQA)
+- [KokushiMD-10](https://huggingface.co/datasets/humanalysis-square/KokushiMD-10)
+    - 10種類の医療関係の国家試験
 - [JPharmaBench　(EQUES)](https://huggingface.co/collections/EQUES/jpharmabench)
     - 名寄せベンチマーク NayoseQA
     - 齟齬チェックベンチマーク　SogoCheck
@@ -63,7 +64,7 @@ Let's go "Soverign AI" !
 - [JMMLU](https://github.com/nlp-waseda/JMMLU)
     - NAIST早稲田大河原研が作成. MMLUの和訳. 
     - CSV形式のデータセット.
-- [MMLU-ProX](https://mmluprox.github.io/)
+- [MMLU-ProX](https://mmluprox.github.io/), [MultiMed-X](https://huggingface.co/datasets/li-lab/MultiMed-X)
     - 多言語. 一部に日本語も含まれる. 
 - [JMedBench](https://huggingface.co/datasets/Coldog2333/JMedBench)
     - あらゆる医療の質問応答データセットをjsonlで格納. GPTによる機械翻訳により日英が用意.
