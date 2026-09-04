@@ -18,12 +18,13 @@ Let's go "Soverign AI" !
 | SIP/東大/理研 | [VLM](https://www.rcast.u-tokyo.ac.jp/ja/news/release/20260306.html) | 142B | - | - | [{5}](https://www.rcast.u-tokyo.ac.jp/ja/news/release/20260306.html) |
 | （参考）| GPT-4o | 不明 | - | 86.6 ~ 88.9% | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) [{2}](https://arxiv.org/pdf/2506.11114) [{3}](https://tech.preferred.jp/ja/blog/preferred-medllm-qwen-72b/) |
 | （参考）| o1-preview | 不明 | - |  88.4%  | [{1}](https://prtimes.jp/main/html/rd/p/000000061.000047565.html) |
+| （参考）| GPT-5.2 | 不明 | - |  97.6%  | [{6}](https://informa.medilink-study.com/web-informa/post51586.html/) |
 
 
 ### 学習用コーパス
 - JST（抄録&本文）
     - [JMedRoBERTa](https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/P3-1.pdf)で学習用に利用.
-    - 医学論文およそ1100万件.
+    - 医学論文およそ1100万件. データは非公開. 
 - [J-ResearchCorpus](https://huggingface.co/datasets/kunishou/J-ResearchCorpus)
 - [Apollo Corpus JP](https://huggingface.co/datasets/kunishou/ApolloCorpus-ja)
 - [JASMINE](https://github.com/OnizukaLab/JASMINE)
@@ -33,6 +34,8 @@ Let's go "Soverign AI" !
 
 ### 評価用タスク
 **※原則としてLLMの学習データに含めるべきではない！**
+
+#### 日本の国家試験
 - 日本医師国家試験(NMLE)
     - [厚生労働省](https://www.mhlw.go.jp/search.html?q=医師国家試験+問題&cx=005876357619168369638%3Aydrbkuj3fss&cof=FORID%3A9&ie=UTF-8&sa=)
         - 第100-118回. 
@@ -52,10 +55,18 @@ Let's go "Soverign AI" !
         - 商用利用不可ライセンス
         - longisland3氏作成. データは[医療美術部の医師国家試験過去問チャート](https://medical-illustration.club/kakomon-chart/med)から引用.
     - [NMLE-RTA](https://github.com/iKora128/nmle-rta/tree/main)
+    - [JMedQA](https://huggingface.co/datasets/SIP-med-LLM/JMedQA)
 - 薬剤師国家試験
     - [YakugakuQA (EQUES)](https://huggingface.co/datasets/EQUES/YakugakuQA)
 - [KokushiMD-10](https://huggingface.co/datasets/humanalysis-square/KokushiMD-10)
     - 10種類の医療関係の国家試験
+- [DenQA](https://github.com/aistairc/medLLM_QA_benchmark)
+    - 歯科医師国家試験
+    - 2023~2024
+- [JMed48k](https://huggingface.co/datasets/JMed48k/JMed48k)
+    - 12,484 scored questions across 11 Japanese national healthcare licensing professions (2005–2025)
+
+#### その他
 - [JPharmaBench　(EQUES)](https://huggingface.co/collections/EQUES/jpharmabench)
     - 名寄せベンチマーク NayoseQA
     - 齟齬チェックベンチマーク　SogoCheck
@@ -69,11 +80,13 @@ Let's go "Soverign AI" !
 - [JMedBench](https://huggingface.co/datasets/Coldog2333/JMedBench)
     - あらゆる医療の質問応答データセットをjsonlで格納. GPTによる機械翻訳により日英が用意.
     - IgakuQA, MedQA, EJMMT など.
-- [DenQA](https://github.com/aistairc/medLLM_QA_benchmark)
-    - 歯科医師国家試験
-    - 2023~2024
+
+
+### Multilingual：多言語で一部日本語も含まれる
+
 - [GlobMed](https://huggingface.co/collections/ruiyang-medinfo/globmed)
-    - 多言語. 一部に日本語も含まれる. 
+- [HealMed](https://huggingface.co/datasets/li-lab/HealMed)
+    - MCQA(HeadQA, MMLU-Pro, MedExpQA, MedQA), NLI(BioNLI), QA(ExpertQA-Bio, ExpertQA-Med, LiveQA) を収録
 
 
 ### ツール類
